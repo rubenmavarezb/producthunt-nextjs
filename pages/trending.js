@@ -5,9 +5,9 @@ import ProductDetail from '../components/layouts/ProductDetail';
 import useProducts from '../hooks/useProducts';
 
 
-export default function Home() {
+export default function Trending() {
 
-  const { products, mounted } = useProducts('created');
+  const { products, mounted} = useProducts('votes');
 
   return (
     <div>
@@ -32,3 +32,4 @@ export default function Home() {
     </div>
   )
 }
+
